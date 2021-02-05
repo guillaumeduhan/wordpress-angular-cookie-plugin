@@ -7,10 +7,10 @@ myApp.controller('CookieController', ['$scope', function ($scope) {
   };
   $scope.acceptCookies = function () {
     Cookies.set('myCookieFromPlugin', true)
-    this.hideBanner()
+    $scope.hideBanner()
   };
   $scope.declineCookies = function () {
     Cookies.set('declineCookies', true)
-    this.hideBanner()
+    $scope.hideBanner()
   };
 }]);
